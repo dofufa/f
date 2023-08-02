@@ -1,1 +1,40 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include ga.html %}
+    
+    <!-- page info -->
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="description" content="{{ page.description }}" />    
+    <link rel="canonical" href="https://feedback.dofufa.com/{{ page.category }}">   
+    <title>{{ page.title }}</title>
+
+
+    <!-- site info -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- using RFC 7231 date format-->
+    <meta http-equiv="expires" content="Sun, 31 Dec 2023 00:00:00 GMT">
+    <meta name="robots" content="index,follow" />
+    <!-- create new favicon: https://www.favicon.cc/ -->
+    <link rel="shortcut icon" href="/favicon.ico" />    
+    <meta name="viewport" content="width=device-width">
+    
+    {% include appleicons.html %}    
+  </head>
+
+  <body>
+    <center>
+     <!-- {% include menu-top.html %} ==>
+      <div id="wrap">
+        {% include header.html %}
+        <div id="content">
+          {{ content }}
+        </div>
+      </div>
+      {% include footer.html %}
+    </center>
+
+    {% include style.html %}
+    {% include js.html %}
+  </body>
+</html>
