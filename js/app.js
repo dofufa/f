@@ -1,8 +1,8 @@
 $( document ).ready(function(){
   
   $( 'button' ).click( function(){
-    console.log('hi!');
-    
+    console.log(this.text()));
+ 
     /*  
     gtag('event', 'button-click', {
       'app_name': 'dofufa-feedback',
